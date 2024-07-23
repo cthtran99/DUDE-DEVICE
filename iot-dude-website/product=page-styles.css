@@ -1,0 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition:all cubic-bezier(0, 1.57, .67, 1.18);
+}

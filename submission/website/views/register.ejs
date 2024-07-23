@@ -1,0 +1,27 @@
+<%- include ("header") -%>
+
+    <div class="log">
+      <form action="/register" method="POST">
+        <h1>Register</h1>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Register</button>
+        <p style="color: white">Already a Member?</p>
+        <a style="color: white" href="/login">Login Now</a>
+      </form>
+    </div>
+  </body>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+</html>

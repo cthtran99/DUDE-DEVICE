@@ -1,0 +1,343 @@
+/*
+    box-sizing  - sets how the total width and height of an element is calculated
+    margin      - create space around elements
+    padding     - space between its content and its border
+*/
+
+*
+{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;  
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* In login.html/register.html
+-the login/register window container design
+*/
+.user_pass_input
+{
+    background-color:rgba(124, 123, 123, 0.314);
+    border-radius: 8px;
+    color:white;
+    padding: 0.5rem;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    width: 30vh;
+    height: auto;
+    max-width: 80%;
+}
+/* In login.html/register.html
+- the login/register button 
+*/
+#submit-button
+{
+    background-color: rgb(83, 83, 83);
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+/*The body of the entire website*/
+body
+{
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #929292 600%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*In index.html
+-the image and text container on the Home tab*/
+.placeholder_text
+{
+    margin: 50px 20%;
+}
+
+/*In index.html
+-the image container on the Home tab*/
+.tech_image
+{
+    width: 100%;   
+    margin: 50px auto 0 0;
+}
+
+/*In index.html
+-the image on the Home tab*/
+.tech_image img
+{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+/*In index.html
+placeholder text*/
+.text
+{
+    color: white;
+    text-align: justify;
+}
+
+
+/*
+    The navigation bar container
+*/
+.navbar
+{
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+/*
+    The navigation bar container
+*/
+.navbar_container
+{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#logo
+{
+    background-image: linear-gradient(to bottom right, #fff 0%, #890000 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 40px;
+}
+/*
+    The navigation bar menu(HOME<PRODUCTS<SUPPORT<LOGIN
+*/
+.navbar_menu
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+/*
+    An inidivial nav bar item
+*/
+.navbar_item
+{
+    height: 1rem;
+}
+/*
+    The navigation indiviual item container
+*/
+.navbar_links
+{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 8px;
+    height: 100%;
+}
+/*
+    The navigation bar login container
+*/
+.navbar_login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 0;
+    width: 100%;
+}
+
+
+/*
+    padding - change the size of the background behind "LOGIN"
+    navigation bar login button
+
+*/
+.login
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   color: #fff;
+   padding: 5px 5px;
+   height: 100%;
+   width: 100%;
+   border: none;
+   outline: none;
+   border-radius: 8px;
+   background: transparent;
+}
+
+/*
+    what the login button does when hover'd over
+*/
+.login:hover
+{
+    color: rgb(255, 255, 255);;
+    background: rgb(87, 0, 0);
+    transition: all 0.5s ease;
+}
+
+
+        
+/*Grey border around navbar links when hovered over*/
+.navbar_links:hover
+{
+    border-width: 1px;
+    border-color: rgb(146, 145, 145);
+    border-style: solid;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*MOBILE TRANSITION
+    designand response of navbar when we switch to a width of 960px
+*/
+@media screen and (max-width: 960px)
+{
+    .placeholder_text
+    {
+        margin: 50px;
+    }
+    
+
+    .navbar_container
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar_menu
+    {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        height: 30vh; /* size of the droptown menu*/
+        z-index: -1; /* layer order -1 means its behind everything*/
+        background:  #32292f;
+    }
+
+    .navbar_menu.active
+    {
+        background:  linear-gradient(to bottom, rgb(0, 0, 0) 0%, #1a1a1a 400%);
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh; /* size of the droptown menu*/
+        font-size: 1.6rem;
+    }
+
+    #logo
+    {
+        padding-left: 50px;
+    }
+
+    .navbar_switch .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: white;
+    }
+
+    .navbar_item
+    {
+        width: 100%;
+    }
+
+    .navbar_links
+    {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu
+    {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_login
+    {
+        padding-bottom: 2rem;
+        padding-right: 55px;
+    }
+
+    .login
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 40px;
+        margin: 0;
+    }
+
+    .navbar_switch .bar
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    /*Transform three lines of mobile menu to a 'X' when active*/
+    #mobile-menu.is-active .bar:nth-child(1)
+    {
+       transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+
+
+    #mobile-menu.is-active .bar:nth-child(3)
+    {
+       transform: translateY(-8px) rotate(-45deg);
+    }
+
+}

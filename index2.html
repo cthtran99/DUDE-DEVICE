@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p>hi 23</p>
+    <br />
+    <p id="aba">output:</p>
+    <p id="num">0</p>
+    <button id="backBtn">go back</button>
+    <br />
+    <button id="moving">click me!</button>
+    <!-- input, database connection -->
+    <form id="userInfo" method="POST">
+      <label for="username">username:</label>
+      <input type="text" id="username" name="username" /><br />
+      <label for="password">password: </label>
+      <input type="text" id="password" name="password" /><br />
+      <button type="submit" id="subUsrPass">submit</button>
+    </form>
+  </body>
+  <!-- <script src="/scripts/fetchtest.js"></script> -->
+  <script async src="scripts/fetchtest.js">
+    //async means I'm not using document.write() to generate HTML (speed up document rendering while downloading the script)
+       // fetch('http://time.jsontest.com')
+       //     .then(res => res.json())
+       //     .then((out) => {
+       //         console.log('Output: ', out);
+       //     }).catch(err => console.error(err));
+  </script>
+
+  <script async src="scripts/counter.js">
+    // function elapsedTime(ms) {
+    //     return new Promise(resolve => setTimeout(resolve, ms));
+    // }
+    // async function* clock(interval, max = Infinity) {
+    //     for (let count = 1; count <= max; count++) {
+    //         await elapsedTime(interval);
+    //         yield count;
+    //     }
+    // }
+
+    // async function test() {
+    //     for await (let tick of clock(300, 100)) {
+    //         //console.log(tick);
+    //         //document.write(tick);
+    //         document.getElementById("num").innerHTML = tick;
+    //     }
+    // }
+
+    // test();
+  </script>
+  <script async src="scripts/test.js"></script>
+  <script async src="scripts/back.js"></script>
+  <script async src="scripts/moving.js"></script>
+  <script async src="scripts/subForm.js"></script>
+  <script async src="scripts/subFunct.js"></script>
+</html>

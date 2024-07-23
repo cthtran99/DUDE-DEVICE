@@ -1,0 +1,36 @@
+<!-- author: Anton Amstadt .... page for car control -->
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudagon Stream</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/buttonStyle.css') }}">
+</head>
+<body>
+	<h1>Team Dudagon's Stream</h1>
+	<img class="feed" src="/video_feed">
+	<br>
+	<button class="btnLeft">left</button>
+	<button class="btnForw">forward</button>        
+        <button class="btnRight">right</button>
+	<br>
+	<button class="btnBack">back</button>
+	<br>
+	<br>
+	<br>
+	<button class="lightsOn">Headlights On</button>
+	<button class="lightsOff">Headlights Off</button>
+	<button class="camUp">Look Up</button>
+	<button class="camDown">Look Down</button>
+
+	<!--
+	<button class="trafficOff">Traffic Lights Off</button>
+	<button class="yellowOn">Yellow On</button>
+	<button class="redOn">Red On</button>
+	<button class="yellowBlink">Yellow Blink</button>
+	<button class="redBlink">Red Blink</button>
+	-->
+</body>
+<script async src="{{url_for('static', filename='movement.js')}}"></script>
+</html>

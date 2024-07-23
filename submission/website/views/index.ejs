@@ -1,0 +1,41 @@
+<%- include ("header") -%>
+   <h1 class="intro-message" style="color: white">YOUR SENSOR DATA</h1>
+      
+
+
+      <div class="sensor-selector">
+        <div class="h1">
+          <a href="temp" class="temp-page">Temperature</a>
+        </div>
+
+        <div class="h1">
+          <a href="frontDistance" class="font-distance">Front Distance</a>
+        </div>
+
+        <div class="h1">
+          <a href="backDistance" class="back-distance">Rear Distance</a>
+        </div>
+
+        <div class="h1">
+          <a href="humidity" class="humidity">Humidity</a>
+        </div>
+
+
+      </div>
+
+      </div>
+
+
+      
+
+    
+      <div class="log2">
+      <form action="/logout?_method=POST" method="POST">
+        <button type="submit">Log Out</button>
+      </form>
+    </div>
+  </div>
+  </body>
+    <script src="products.js"></script>
+  <script src="cart.js"></script>
+</html>

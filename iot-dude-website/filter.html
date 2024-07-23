@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta description="This is the image processing page for DUDE.">
+        <title>(Test) Image Process Page</title>
+    </head>
+    <body>
+        You can process a selected image here.
+        <form action="filter.html" method="post" enctype="multipart/form-data">
+            <div>
+                <label>Select File to be Processed:</label>
+                <input type="file" name="image-process" required/>
+            </div>
+            <div>
+                <button type="submit">Process Image</button>
+            </div>
+        </form>
+    </body>

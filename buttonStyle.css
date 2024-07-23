@@ -1,0 +1,11 @@
+.feed {
+	width: auto;
+	height: 75%;
+	padding: 10px;
+}
+
+.btnBack {
+	position: relative;
+	left: 45px;
+	top: 5px;
+}

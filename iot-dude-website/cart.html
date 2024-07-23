@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--FONT-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--END FONT-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <title>DUDE</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="index.html" id="logo">DUDE</a>
+        <div class="navbar_switch" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <!--TABS OF THE WEBSITE-->
+          <li class="navbar_select">
+            <a href="index.html" class="navbar_links"> HOME </a>
+          </li>
+          <li class="navbar_select">
+            <a href="products.html" class="navbar_links"> PRODUCTS </a>
+          </li>
+          <li class="navbar_select">
+            <a href="support.html" class="navbar_links"> SUPPORT </a>
+          </li>
+          <!--END WEBSITE TABS-->
+
+          <!--Login and Register Button-->
+          <li class="navbar_login">
+            <a href="login.html" class="login"> LOGIN </a>
+          </li>
+          <!--END Login and Register Button-->
+          <!--Shopping Cart-->
+          <a href="cart.html">
+            <li class="cart">
+              <i class="bi bi-cart3"></i>
+              <div id="cartAmount" class="cartAmount">0</div>
+            </li>
+          </a>
+
+          <!--END Shopping Cart-->
+        </ul>
+      </div>
+    </nav>
+    <!--NAVBAR END-->
+
+    <div id="label" class="text-center"></div>
+    <div class="shopping-cart" id="shopping-cart"></div>
+    <div id="total-price" class="total-price"></div>
+
+    <!-- Products-->
+    <div class="shop" id="shop"></div>
+  </body>
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="app.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</html>

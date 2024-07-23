@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--END FONT-->
+    />
+
+    <title>DUDE</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="/" id="logo">DUDE</a>
+        <div class="navbar_switch" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <!--TABS OF THE WEBSITE-->
+          <li class="navbar_select">
+            <a href="/index.html" class="navbar_links"> HOME </a>
+          </li>
+          <li class="navbar_select">
+            <a href="/" class="navbar_links"> PRODUCTS </a>
+          </li>
+          <li class="navbar_select">
+            <a href="/" class="navbar_links"> SUPPORT </a>
+          </li>
+
+          <!--END WEBSITE TABS-->
+
+          <!--Login and Register Button-->
+          <li class="navbar_login">
+            <a href="/login.html" class="login"> LOGIN </a>
+          </li>
+          <!--END Login and Register Button-->
+        </ul>
+      </div>
+    </nav>
+    <!--NAVBAR END-->
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--REGISTRATION FORM-->
+    <div class="user_pass_input">
+      <!--CHANGE TO MAKE REGISTRATION FORM-->
+      <form action="" method="">
+        <!--START INPUT HERE-->
+        <table>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <input
+                style="height: 35px; font-size: 1.5rem"
+                type="email"
+                name="mail"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td>
+              <input
+                style="height: 35px; font-size: 1.5rem"
+                type="user_pass"
+                maxlength="16"
+                minlength="8"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Verify Password:</td>
+            <td>
+              <input
+                style="height: 35px; font-size: 1.5rem"
+                type="user_pass"
+                maxlength="16"
+                minlength="8"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!--REGISTER BUTTON-->
+              <input
+                id="submit-button"
+                type="submit"
+                name="submit"
+                value="REGISTER"
+              />
+              <!--END REGISTER BUTTON-->
+            </td>
+            <td>
+              Already a Member? <br />
+              <a style="color: red" href="/login.html">Login Now</a>
+            </td>
+          </tr>
+        </table>
+        <!--END INPUT HERE-->
+      </form>
+    </div>
+  </body>
+</html>

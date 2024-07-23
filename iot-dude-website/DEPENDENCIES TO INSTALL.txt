@@ -1,0 +1,17 @@
+npm i init -y
+express, ejs
+save-dev
+nodemon
+dotenv
+bcrypt
+passport
+passport-local
+express-session
+express-flash
+mongoose
+
+create .env file & type: SESSION_SECRET=secret
+
+to run type: npm run devStart
+
+and then go to http://localhost:3000/

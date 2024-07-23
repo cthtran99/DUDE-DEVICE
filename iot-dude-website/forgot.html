@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--END FONT-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <title>DUDE</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="home" id="logo">DUDE</a>
+        <div class="navbar_switch" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <!--TABS OF THE WEBSITE-->
+          <li class="navbar_select">
+            <a href="home" class="navbar_links"> HOME </a>
+          </li>
+          <li class="navbar_select">
+            <a href="products" class="navbar_links"> PRODUCTS </a>
+          </li>
+          <li class="navbar_select">
+            <a href="support" class="navbar_links"> SUPPORT </a>
+          </li>
+          <!--END WEBSITE TABS-->
+
+          <!--Login Button-->
+          <li class="navbar_login">
+            <a href="/login" class="login"> LOGIN </a>
+          </li>
+          <li class="navbar_login"></li>
+          <!--END Login Button-->
+          <!--Shopping Cart-->
+          <a href="cart.ejs">
+            <li class="cart">
+              <i class="bi bi-cart3"></i>
+              <div id="cartAmount" class="cartAmount">0</div>
+            </li>
+          </a>
+          <!--END Shopping Cart-->
+        </ul>
+      </div>
+    </nav>
+    <!--NAVBAR END-->
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <div class="log">
+      <form action="/login" method="POST">
+        <h1>RESET PASSWORD</h1>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <button type="submit" name="id">RESET</button>
+        Remember? <br />
+        <a style="color: red" href="/login">Login Now</a>
+      </form>
+    </div>
+
+    <!--REGISTRATION FORM-->
+    <div class="log">
+      <!--CHANGE TO MAKE REGISTRATION FORM-->
+      <form action="forgot.html" method="post">
+        <!--START INPUT HERE-->
+        <table>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <input
+                style="height: 35px; font-size: 1.5rem"
+                type="email"
+                name="mail"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!--REGISTER BUTTON-->
+              <input
+                id="submit-button"
+                type="submit"
+                name="submit"
+                value="RESET"
+              />
+              <!--END REGISTER BUTTON-->
+            </td>
+            <td>
+              Remember? <br />
+              <a style="color: white" href="/login">Login Now</a>
+            </td>
+          </tr>
+        </table>
+        <!--END INPUT HERE-->
+      </form>
+    </div>
+  </body>
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+</html>

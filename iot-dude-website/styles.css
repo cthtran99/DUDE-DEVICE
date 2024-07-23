@@ -1,0 +1,670 @@
+/*
+    box-sizing  - sets how the total width and height of an element is calculated
+    margin      - create space around elements
+    padding     - space between its content and its border
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  background: lightgrey;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid red;
+}
+
+/* In login.html/register.html
+-the login/register window container design
+*/
+.user_pass_input {
+  background-color: rgba(124, 123, 123, 0.314);
+  border-radius: 8px;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  width: 30vh;
+  height: auto;
+  max-width: 80%;
+}
+/* In login.html/register.html
+- the login/register button 
+*/
+#submit-button {
+  background-color: rgb(83, 83, 83);
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/*The body of the entire website*/
+body {
+  background-image: url(https://i.ibb.co/6yPTpXL/background2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+}
+
+
+
+.home-background{
+  font-size: 160%;
+  color: white;
+  text-align: center;
+  margin-top: 15rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/*In home
+-the image and text container on the Home tab*/
+.placeholder_text {
+  margin: 50px 20%;
+}
+
+/*In home
+-the image container on the Home tab*/
+.tech_image {
+  width: 100%;
+  margin: 50px auto 0 0;
+}
+
+/*In home
+-the image on the Home tab*/
+.tech_image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*In home
+placeholder text*/
+.text {
+  color: white;
+  text-align: justify;
+}
+
+/*
+    The navigation bar container
+*/
+.navbar {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+/*
+    The navigation bar container
+*/
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#logo {
+  background-image: linear-gradient(to bottom right, #fff 0%, #890000 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 40px;
+}
+/*
+    The navigation bar menu(HOME<PRODUCTS<SUPPORT<LOGIN
+*/
+.navbar_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+/*
+    An inidivial nav bar item
+*/
+.navbar_item {
+  height: 1rem;
+}
+/*
+    The navigation indiviual item container
+*/
+.navbar_links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 5px 5px;
+  border-radius: 8px;
+  height: 100%;
+}
+/*
+    The navigation bar login container
+*/
+.navbar_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.bi-cart3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cartAmount {
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+/*
+    padding - change the size of the background behind "LOGIN"
+    navigation bar login button
+
+*/
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 5px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: transparent;
+}
+
+/*
+    what the login button does when hover'd over
+*/
+.login:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(87, 0, 0);
+  transition: all 0.5s ease;
+}
+
+/*Grey border around navbar links when hovered over*/
+.navbar_links:hover {
+  border-width: 1px;
+  border-color: rgb(146, 145, 145);
+  border-style: solid;
+  transition: all 0.3s ease-in-out;
+}
+
+/*Product page*/
+.shop {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  font-size: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.bi-dash-lg {
+  color: red;
+  cursor: pointer;
+}
+
+.bi-plus-lg {
+  color: green;
+  cursor: pointer;
+}
+
+.box .info {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.box {
+  padding: 100px;
+}
+
+.box .image {
+  padding: 10px;
+  text-align: center;
+}
+
+.box .image img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+}
+
+a:link {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.total-price {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.checkout {
+  font-size: 1.25rem;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+  border: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.HomeBtn {
+  background-color: #212529;
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+  border: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title-price-x {
+  width: 195px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shopping-cart {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cart-item {
+  gap: 15px;
+  display: flex;
+}
+
+.quantity {
+  color: white;
+}
+
+.item-total {
+  color: white;
+}
+
+.totalBill {
+  color: white;
+}
+
+.err-msg {
+  color: red;
+}
+
+form {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 50px 30px;
+  background-color: rgba(124, 123, 123, 0.314);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.log2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+form h1 {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+form .form-group {
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  color: #eee;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+form input {
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+form input:not([type="submit"]) {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.4s;
+  color: #222;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+form input:not([type="submit"])::placeholder {
+  color: #ccc;
+}
+
+form input:not([type="submit"]):focus,
+form input:not([type="submit"]):valid {
+  background-color: #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgb(87, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.4s;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#logout_navbar {
+  font-size: 100px;
+}
+
+.intro-message {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  margin-top: 100px;
+}
+
+.background-color{
+  color: white;
+  text-align: center;
+  margin-top: 15rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.sensor-selector {
+ 
+  padding: 15px;
+  border-radius: 8px;
+
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.4s;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+
+
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.h1{
+  margin: 10px;
+    cursor: pointer;
+
+
+}
+
+.temp-page
+{
+  text-decoration: none ;
+  color: white;
+}
+
+.font-distance{
+  text-decoration: none ;
+  color: white;
+}
+
+.back-distance{
+  text-decoration: none ;
+  color: white;
+}
+
+.humidity{
+  text-decoration: none ;
+  color: white;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+}
+
+
+
+/*MOBILE TRANSITION
+    designand response of navbar when we switch to a width of 960px
+*/
+@media screen and (max-width: 960px) {
+  .graph {
+    flex-direction: column;
+  }
+
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  .cartAmount {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .placeholder_text {
+    margin: 50px;
+  }
+
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+  .navbar_menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    height: 30vh; /* size of the droptown menu*/
+    z-index: -1; /* layer order -1 means its behind everything*/
+    background: #32292f;
+  }
+
+  .navbar_menu.active {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #1a1a1a 400%);
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 90vh; /* size of the droptown menu*/
+    font-size: 1.6rem;
+  }
+
+  #logo {
+    padding-left: 50px;
+  }
+
+  .navbar_switch .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+  }
+
+  .navbar_item {
+    width: 100%;
+  }
+
+  .navbar_links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    margin: 100px;
+  }
+
+  .navbar_switch .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  /*Transform three lines of mobile menu to a 'X' when active*/
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

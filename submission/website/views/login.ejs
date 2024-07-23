@@ -1,0 +1,28 @@
+<%- include ("header") -%>
+
+    <div class="log">
+      <form action="/login" method="POST">
+        <p class="err-msg">
+          <% if (messages.error) { %> <%= messages.error %> <% } %>
+        </p>
+        <h1>Login</h1>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit" name="id">Login</button>
+        <a href="/register" style="color: white">Register <br /></a>
+        <a href="/forgot.html" style="color: white">Reset password?</a>
+      </form>
+    </div>
+
+    <link rel="stylesheet" href="styles.css" />
+  </body>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+</html>
